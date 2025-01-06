@@ -1,0 +1,188 @@
+Variables:
+•	The variables are nothing but containers / memory blocks to stores the data
+•	Variable are used to store data(any kind of data)
+
+•	Case-sensitive
+•	Start With letters, (under_score), $(dollarsign)
+•	Constant start with numbers
+•	Reserved words (keywords) not allowed
+•	Allow letters, _(under_score) , $(dollarsign) , numbers
+
+Types of variables
+•	Var() (1995) – used only old browsers
+•	// var name= "ramu"
+•	
+•	        // name="sam"
+•	
+•	        // console.log(name)
+•	        // console.log(name)
+•	        // document.write(name)
+
+Example2:
+ var a=1
+        a=5
+        console.log(a+a)
+
+Note:
+•	Reassigning with var and let is also possible
+let a=1
+              a=5
+                console.log(a+a)
+
+•	Reassigning with const is not possible
+•	const a=1
+•	        a=5
+•	        console.log(a+a)
+Error:
+
+basic.html:19 Uncaught TypeError: Assignment to constant variable. at basic.html:19:10
+
+	
+
+•	Redeclaring possible with var 
+Example:
+ var a=1
+  var a=5
+  console.log(a+a)
+
+•	Redeclaring with let is not accepted
+•	let a=1
+•	        let a=5
+•	        console.log(a+a)
+output : Error 
+
+•	Redeclaring with const is not accepted
+•	 const a=1
+•	        const  a=5
+•	        console.log(a+a)
+•	Output:error
+
+
+	
+		
+
+
+•	Let (es6)-(2015)
+•	Const (es6)
+Intentifiers:
+Intentifiers name given to variables.
+
+Block Scope:
+
+Var don’t have block scope:
+var a="john"
+        {
+            var a="ramu"
+            console.log(a)
+            console.log(a)
+            
+        }
+        console.log(a)
+        console.log(a)
+
+ var a=11
+        var a=3 
+        {
+            var a=5
+            console.log(a+a)
+            console.log(a+a)
+            
+            
+        }
+        console.log(a+a)//10 dont have block scope
+
+        
+ex3:
+var a=11
+        var a=3
+        {
+            var a=5
+            a=a+5//10  
+            console.log(a+a)//20
+            
+            
+            
+        }
+        console.log(a+a)//20
+
+
+let have block scope:
+ let a="john"
+        {
+            let a="ramu"
+            console.log(a)
+            console.log(a)
+            
+        }
+        console.log(a)
+example2:
+
+
+        let a=11
+        {
+            let a=5
+            console.log(a+a)
+            console.log(a+a)
+            
+            
+        }
+        console.log(a+a)
+        console.log(a+a)
+
+
+
+
+#implemented in vs code  :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var name= "ramu"
+
+        // name="sam"
+
+        // console.log(name)
+        // console.log(name)
+        // document.write(name)
+
+        // const a=1
+        //   a=5
+        // console.log(a+a)
+
+        // let a=11
+        // {
+        //     let a=5
+        //     console.log(a+a)
+        //     console.log(a+a)
+            
+            
+        // }
+        // console.log(a+a)
+        // console.log(a+a)
+        
+        
+        var a=11
+        var a=3
+        {
+            var a=5
+            a=a+5//10  
+            console.log(a+a)//20
+            
+            
+            
+        }
+        console.log(a+a)//20
+    
+        
+
+        
+
+    </script>
+    
+</body>
+</html>
