@@ -1,0 +1,106 @@
+JavaScript Operators:
+1.Arithimetic:
++, - , * , /
+Multiplication: *
+Division: / ---------------- (Q)
+Modulus operator: %-------(R)
+Exponential (Raised to the power)---  **
+++ , --
+Example:
+let a=5
+let b=10
+b++
+a--
+
+document.write(a,"<br>")
+document.write(b,"<br>")
+
+document.write(a%b,"<br>")
+//remainder part
+document.write(a/b,"<br>")
+//quotient
+
+document.write(a*b,"<br>")
+
+document.write(a**b,"<br>"
+
+Assignment:
+Var student =  ”ravi”
+
++=
+-=
+*=
+/=
+%=
+
+Logical operator:
+•	And: T and T =T  ---     &&
+•	Or : T or T =T----           ||
+•	Not: T not =F -------       !
+•	let a="true"
+•	let b="false"
+•	
+•	document.write(a && b,"<br>")
+•	document.write(a || b,"<br>")
+•	document.write("Not:",!a,"<br>")
+•	
+•	let x=10
+•	let y=20
+•	
+•	document.write(x<y && x>y,"<br>")
+•	document.write(x<y || x>y,"<br>")
+•	
+•	document.write((x<y) && (y<11),"<br>")
+
+Relational operators: (comparison operator)
+< , > , <= , >=, == , ====, !=, !===
+== - equality
+How is “===” any different from “==”? The “===” operator compares both content and type, whereas “==” compares only content. JavaScript counts anything that is in between the two quotation marks as a string
+
+Ex:
+let x=10
+let y="10"
+
+document.write(x==y,"<br>")
+document.write(x===y,"<br>")
+document.write(x!=y,"<br>") //wont check data type
+document.write(x!==y,"<br>")  // check data type
+
+
+
+Conditional operator; Ternary operator (?):
+First evaluates an expression for a true or false:
+Syntax:
+Condition ? e1 : e2
+Example:
+let d=40
+let k=(d>40) ? "Ac off" : "Ac on"
+document.write(k)
+
+Windows:
+Alert()
+alert("hi john")
+console.og(alert)
+
+Prompt(): to take input from user
+Prompt by default consider as string
+let a=prompt()
+
+let bb=prompt()
+
+document.write(a+bb)
+
+console.log(a+bb)
+
+
+let name = prompt("Enter name:")
+
+alert(name)
+
+let name = prompt("Enter name:")
+
+document.write(name)
+
+
+Conform()
+
