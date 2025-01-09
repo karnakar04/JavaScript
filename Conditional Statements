@@ -1,0 +1,83 @@
+Conditional Statements:
+--To make the set instructions execute only when the give condition is True
+---used to decide whether the code has to be executed or skip based on the given condition
+--line-line (Sequence)
+Block of code : set of instructions
+--it will execute only when the specific condition is True
+Condition: An expression that evaluates an result (True or False)
+Ex: console.log(5>6)
+--methods:
+if
+if-else
+else if
+Switch
+Ternary operator
+
+if : only one possible condition:
+--if the condition is True it will execute other wise it skip
+
+Syntax:
+If (condition){
+--block of code
+}
+Example:
+<script>
+        let a=4
+        let b=5
+        if(a<b){
+            document.write("a less than b","<br>")
+        }
+        document.write("code ended here!")
+    </script>
+Output:
+a less than b
+code ended here!
+Example2:
+ <script>
+        let a=4
+        let b=5
+        if(a>b){
+            document.write("a less than b","<br>")
+        }
+        document.write("code ended here!")
+output:
+code ended here!
+If-else:
+Example:
+<script>
+        let a=4
+        let b=5
+        if(a>b){
+            document.write("a less than b","<br>")
+        }else{
+            document.write("a greater than b","<br>")
+        }
+        document.write("code ended here!")
+    </script>
+
+else if
+example:
+ let age=prompt("Enter your age:")
+        let name=prompt("Enter your name:")
+        if(age<18){
+            alert(name+" you are to young to marry")
+        }else if(age>35){
+            alert(name+" you are to old to marry")
+        }else{
+            alert(name+" perfect age to marry")
+        }
+        alert("welcome to my world!")
+    </script>
+
+Example2:
+        let a = parseInt(prompt("Enter your scoreA:"));  // Convert to integer
+let b = parseInt(prompt("Enter your scoreB:"));  // Convert to integer
+
+let sum = a + b;
+
+if ((a > 300 || b > 300) && sum < 500) {
+    alert("Can team up");
+} else {
+    alert("Cannot team up");
+}
+
