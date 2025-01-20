@@ -1,0 +1,81 @@
+Loops:
+Allows  the block of code execute several times
+1-10
+1.for loop
+2.for in
+3.
+4.while
+5.do while
+
+1.for loop:
+Syntax:
+for(initialisation;condition; update-expression){
+--block of code
+}
+Loop starts 
+for(let i=1;i<=5;i++){
+    console.log(i)
+}
+
+#i=1 ;2 ; 3 ; 4 ;5 ;6
+C=1<=5; 2<=5; 3<=5; 4<=5 5<=5;6<=5#F
+#u=i++ = i=i+1;1+1=2 ; 3 ;4 ; 5+1=6
+#b=1; 2 ; 3; 4;5
+
+####  10-15
+for(let i=10;i<=15;i++){
+    console.log(i)
+}
+
+
+for(let i=2;i<=9;i=i+2){
+    console.log(i+3)
+}
+
+•  First Iteration:
+•	Initialization: i = 2
+•	Condition Check: 2 <= 9 (True)
+•	Body Execution: console.log(2 + 3) outputs 5.
+•	Update Step: i = 2 + 2 = 4
+•  Second Iteration:
+•	Condition Check: 4 <= 9 (True)
+•	Body Execution: console.log(4 + 3) outputs 7.
+•	Update Step: i = 4 + 2 = 6
+•  Third Iteration:
+•	Condition Check: 6 <= 9 (True)
+•	Body Execution: console.log(6 + 3) outputs 9.
+•	Update Step: i = 6 + 2 = 8
+•  Fourth Iteration:
+•	Condition Check: 8 <= 9 (True)
+•	Body Execution: console.log(8 + 3) outputs 11.
+•	Update Step: i = 8 + 2 = 10
+•  Fifth Iteration:
+•	Condition Check: 10 <= 9 (False)
+•	The loop terminates because the condition is no longer true.
+
+  /*i=2; 2<=9; i=2+2=4
+            -----2+3=5
+            i=4; 4<=9; i=4+2=6
+            -----4+3=7
+            i=6; 6<=9; i=6+2=8
+            -----6+3=9
+            i=8; 8<=8; i=8+2=10
+            -----8+3=11*/
+#9th table 
+for(let i = 1; i <= 10; i++) {
+    table=9*i
+    console.log(table)
+}
+
+#Repeat text 5 times
+let x="hello "
+for(let i=1;i<=5;i++){
+    console.log(x)
+}
+
+ for(let i=1;i<=10;i++){
+            document.write("9x",i,"=",9*i,"<br>")
+            console.log("9x",i,"=",9*i)
+}
+
+
