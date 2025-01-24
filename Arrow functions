@@ -1,0 +1,74 @@
+Arrow functions:
+--Es6 version
+--more readable and more structure
+--annonymous function (lambda functions)
+--without function name but they are assigned to avariable
+Example:
+Arrow function with out parameter
+let C=()=>{
+    console.log("Hello world")
+}
+C();
+ 
+Arrow function with parameter
+let C=(x,y)=>{
+    console.log(x+y)
+}
+C(20,30);
+C(2,3);
+
+Arrow function with one Argument with out using parenthesis
+let greet=x=>console.log(x);
+greet("hello")
+
+Arrow function with out Argument
+let greet=()=>console.log("Hello")
+greet()
+
+Example: Arrow functions as an expression
+let age=18;
+let welcome=(age<18) ?
+()=>console.log("HI john"):
+()=>console.log("HI madhu");
+welcome()
+
+Synchronous functions:
+
+function task1(){
+    console.log("Task1 : Start")
+}
+
+function task2(){
+    console.log("Task2 : Start")
+}
+function task3(){
+    console.log("Task3 : Start")
+}
+task1()
+task2()
+task3()
+
+Asynchronous functions:
+Multiple tasks at a time
+console.log("HI JOHN");
+setTimeout(()=>{
+    console.log("HI i am writing")
+},5000);
+
+console.log("i am in lab")
+
+JavaScript callbacks:
+A call back function is a funtions that is passed argument to another function;
+Eample:
+function greet(name,callback){
+    console.log(`Hello,${name}!`)
+    callback();
+    //this calls the callback function after greeting
+}
+function sayGoodbye(){
+    console.log("Goodbye")
+}
+//call greet and pass sayGoodbye as the callback
+
+greet("sam",sayGoodbye)
+
