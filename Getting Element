@@ -1,0 +1,102 @@
+Methods of Document Object:
+Getting Element
+1.getting an element by id
+ <h1 class="b" id="a">Sai</h1>
+    <h1 class="c" id="b">ram</h1>
+    <h1 class="a" id="c">ramesh</h1>
+    <h1 class="c" >hari</h1>
+
+// let x=document.getElementsByClassName("a")
+    // console.log(x)
+
+
+2.getting an element by class
+--returns all the elements having the same class name
+--return the in the form of html collection object
+getElementbyClassName() method  return the in the form of html collection object
+An HTML collection is array like list of html  elements.
+Length property provides the size of the collection
+Example:
+ <h1 class="b" >Sai</h1>
+    <h1 class="c" >ram</h1>
+    <h1 class="a" >ramesh</h1>
+    <h1 class="c" >hari</h1>
+
+    <script>
+        let x= document.getElementsByClassName('a')
+            console.log(x)
+//print each element in the html collection
+            for(let i=0;i<x.length;i++){  //i=0;i<3;i++
+                console.log(x[i])
+            }
+
+3.getting an element by tag name
+getElementbyTagName()
+--this method takes a tag name as string and returns an html collection object
+Example:
+    <h1 class="b" >Sai</h1>
+    <h1 class="c" >ram</h1>
+    <h1 class="a" >ramesh</h1>
+    <h1 class="c" >hari</h1>
+
+    <script>
+        let x= document.getElementsByTagName('h1')
+            console.log(x)
+
+            for(let i=0;i<x.length;i++){
+                console.log(x[i])
+            }
+
+
+4.getting an element by query selector methods 
+Queryselector:
+Queryselector: used to select HTML element by its className , tagname; it only select only the first element 
+Example:
+  <h3 class="b" >Sai</h1>
+    <h1 class="c" >ram</h1>
+    <h1 class="a" >ramesh</h1>
+    <h1 class="c" >hari</h1>
+
+    <script>
+        let x= document.querySelector('h1')
+            console.log(x)
+output:
+<h1 class="c" >ram</h1>
+
+Queryselector all: can be used to select html elements   tagname or classname. It return a nodeList which 
+
+Manipulate Elements:
+To create  a html element:
+--createElement( )
+--document.createElement()
+--The method takes an html element tag name as string parameter
+Example:
+let x= document.createElement('h2')
+        t.className="tt"
+        t.textContent+"I am in hyd"
+        console.log(t)
+// document.body.appendChild(t);
+
+
+//To  create multiple element:
+  const t = ["john","joe","Roman"]
+
+            for (let i=0;i<t.length;i++){
+                let tt=document.createElement("h2")
+                tt.className="aa"
+                tt.textContent=t[i];
+                console.log(tt)
+            }
+
+ let title
+            for(let i=0;i<3;i++){
+                title=document.createElement("h1")
+                title.className="t"
+                title.textContent=i
+                console.log(title)
+            }
+
+
+
+
+
