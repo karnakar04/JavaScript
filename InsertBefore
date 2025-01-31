@@ -1,0 +1,43 @@
+InsertBefore:
+ <div id="a">
+        <h1>john</h1>
+#cena 
+        <h1>joe</h1>
+
+    </div>
+    <div id="b">
+        <h2>sam</h2>
+        <h2>snow</h2>
+
+    </div>
+
+ <div id="a">
+        <h1>john</h1>
+        <h1 id="r">joe</h1>
+
+    </div>
+    <div id="b">
+        <h2>sam</h2>
+        <h2>snow</h2>
+
+    </div>
+<script>
+    let n=document.createElement('h1')
+    n.textContent="Cena"
+
+    let p=document.getElementById('a')
+    let l=document.getElementById('r')
+    p.insertBefore(n,l)
+
+Remove element:
+Let b=document.gerElementById(“a”)
+b.remove( )
+
+To remove child element:
+removeChild();
+
+
+
+
+
+
