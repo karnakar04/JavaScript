@@ -1,0 +1,109 @@
+Create element by using js:
+--document.createElement(“hi”)
+Create element by using React js:
+React.createElement(‘hi’)
+Syntax:
+React.createElement( type , props)
+Type = tagname(h1,p,div)
+Prop=id,className,Onclick
+
+ReactDOM.createRoot()—to render the element
+ReactDOM.render() -method is used to display to the element
+Syntax:
+Reactelement = what to render
+Container = where to render
+
+Jsx:
+JavaScript XML
+--it is a Syntax extension for js
+--here we write the html code and this will be translated into js
+--Babel --tool
+
+Points:
+<br/>
+<img/>
+Class = className
+<body>
+    <div id="a"> </div>
+
+    <script >
+    
+    const b=React.createElement('h1',{id:'c'},"i am john")
+    const e=document.getElementById('a')
+    const root=ReactDOM.createRoot(e)
+    root.render(b)
+    
+    </script>
+
+JSX:
+--javascript XML
+--it is a syntax extension for javascript
+--isx allows us to write HTML code in react js
+--jsx all HTML tag must be closed
+--jsx compiles the html code to js
+Babel is a tool in jsx;
+##CND 
+    <div id="a"></div>
+        <script type="text/babel">
+            const element=<h1>Welcome to react</h1>
+            const e=document.getElementById('a')
+            const root=ReactDOM.createRoot(e)
+            root.render(element) 
+        </script>
+
+Expressions:
+{ }
+
+    <div id="a"></div>
+        <script type="text/babel">
+           const n=5
+           const m=<h1>React js {n*2} times better than JSX</h1>
+            const e=document.getElementById('a')
+            const root=ReactDOM.createRoot(e)
+            root.render(m) 
+        </script>
+
+Conditional Rendering:
+
+  <div id="root"></div>
+<script type="text/babel">
+    const APP = () => {
+        const isLoggedIn = true;
+
+        return (
+            <div> 
+                {isLoggedIn ? (<h1>Welcome back, user!</h1>) : (<h1>Please login</h1>)}
+                {isLoggedIn && <h1>You have a new notification</h1>}
+            </div>
+        );
+    };
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<APP />);
+
+Functions:
+Using a function call:
+--You can use a function call directly with in the jsx expression
+
+Components:
+Nav,cart
+<div id="a"></div>
+    <script type="text/babel">
+        function getGreeting(name){
+            return `hello , ${name}! welcome to react`
+        }
+
+        function Greeting(){
+            const name="Joe"
+            return <h1> {getGreeting(name)}</h1>
+
+        }
+
+        const root =ReactDOM.createRoot(document.getElementById('a'))
+        root.render(<Greeting/>)
+
+
+
+
+
+
