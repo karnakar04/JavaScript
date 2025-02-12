@@ -1,0 +1,102 @@
+App.js
+import React from "react";
+import ProfileCard from "./ProfileCard";
+import "./ProfileCard.css"; // Ensure global styles are applied
+
+const App = () => {
+  return (
+    <div>
+      <h1 style={{ textAlign: "center", color: "#007bff" }}>User Profiles</h1>
+      <div className="profile-container">
+        <ProfileCard
+          name="Monalisa"
+          greeting="Hello! I love art and history."
+          imageSrc="https://tse4.mm.bing.net/th?id=OIF.yaI4Izqi4YNH9RBh5B%2fD6Q&pid=Api&P=0&h=180"
+        />
+        <ProfileCard
+          name="John"
+          greeting="Hey there! I enjoy photography."
+          imageSrc="https://tse4.mm.bing.net/th?id=OIF.ZwlRg3Q6DlCydhLWfaGbyg&pid=Api&P=0&h=180"
+        />
+        <ProfileCard
+          name="Joe"
+          greeting="Hi! I’m a travel enthusiast."
+          imageSrc="https://tse4.mm.bing.net/th?id=OIP.wybcLO23vzD-90cq9jYKqAHaEK&pid=Api&P=0&h=180"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default App;
+
+
+
+ProfileCard.js
+
+
+import React from "react";
+import "./ProfileCard.css"; // Import CSS for styling
+
+const ProfileCard = ({ name, greeting, imageSrc }) => {
+  return (
+    <div className="profile-card">
+      <img src={imageSrc} alt={`${name}'s profile`} className="profile-image" />
+      <h2>{name}</h2>
+      <p>{greeting}</p>
+    </div>
+  );
+};
+
+export default ProfileCard;
+
+
+
+ProfileCard.css
+
+
+
+.profile-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .profile-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #007bff;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+  }
+  
